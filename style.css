@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+.intro {
+  font-family: "lato";
+  color: #dddddd;
+  text-size: 20px;
+  line-height: 2em;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+}
+#divi-video-container {
+  position: relative;
+  z-index: 2;
+}
+button {
+  position: relative;
+  transition: all 300ms;
+  background: #0075ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 1em 2em;
+  z-index: 1;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.divi-delayed-button-1 {
+  transform: translateY(100%);
+}
+.divi-delayed-button-2 {
+  transform: translateY(-100%);
+  float: right;
+}
+
+.divi-delayed-button-1,
+.divi-delayed-button-2 {
+  visibility: hidden;
+  transition: all 400ms ease !important;
+}
+
+.divi-delayed-button-1.show-button,
+.divi-delayed-button-2.show-button {
+  visibility: visible;
+  transform: none;
+}
